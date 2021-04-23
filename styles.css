@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(31, 95, 233) ;
+}
+
+
+
+/*COURT*/
+.court{
+    float: left;
+    border: 5px solid #fff;
+    margin: 0 0 0 200px;
+    width: 600px;
+    height: 600px;
+    background-color: rgb(238, 151, 51);
+}
+.zone{
+    width: 100%;
+    height: 200px;
+    border-bottom: 5px solid #fff;
+}
+.player{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 40px;
+    overflow: hidden;
+}
+#setter{
+    width:110px;
+    height:110px;
+    background-color: rgb(230, 215, 18);
+}
+
+
+
+
+/*SYSTEM SELECTORS*/
+.distributions{
+    width: 100%;
+    max-width: 500px;
+    margin:0px;
+    float: right;
+}
+a{
+    text-decoration:none;
+
+}
+.selectBox{
+    width:50%;
+    margin: auto;
+    position: relative;
+}
+.select{
+    background-color:#fff;
+    width: 100%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+     align-items: center;
+     transition: .2s ease all;
+     margin-bottom: 30px;
+     padding: 30px;
+     position: relative;
+     z-index: 200;
+     border: 2px solid transparent;
+}
+.select.active, .select:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.16);
+    border: 3px solid rgb(12, 58, 207);
+}
+.select.active:before{
+    content:"";
+    display: block;
+    height:0;
+    width: 0;
+    border-top: 15px solid #fff;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    bottom:-34px;
+    left:calc(50% - 15px);
+}
+.select i{
+        font-size: 30px;
+        margin-left: 30px;
+        color:rgb(12, 58, 207);
+}
+
+
+
+
