@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aplicación para explicar sistemas de juego del voleybol">
     <meta nmae="author" content="Julián Andrés Burbano Figueredo">
     <link rel="stylesheet" href="styles.css">
@@ -12,31 +12,79 @@
     <script src="https://kit.fontawesome.com/6a54ef4936.js" crossorigin="anonymous"></script>
     <title>Volleyballapp</title>
 </head>
+
 <body>
-    
-    <div class="court">
-        <div class="zone"></div>
-        <div class="player"></div>
-        <div class="player"></div>
-        <div class="player"></div>
-        <div class="player"></div>
-        <div class="player"></div>
-        <div class="player">
-            <div id="setter"></div>
-        </div>
+    <!--Players-->
+    <div class="players">
+        <div class="bench"><div class="player" id='p1' draggable="true">A1</div></div>
+        <div class="bench"><div class="player" id='p2' draggable="true">A2</div></div>
+        <div class="bench"><div class="player" id='p3' draggable="true">B1</div></div>
+        <div class="bench"><div class="player" id='p4' draggable="true">B2</div></div>
+        <div class="bench"><div class="player" id='p5' draggable="true">C2</div></div>
+        <div class="bench"><div class="player" id='p6' draggable="true">
+            <div id="setter">C1</div>
+        </div></div>
+        
+        
+        
+        
+        
+        
     </div>
+    <!--court and players position-->
+    <div class="court" id="court">
+        
+            <div class="space zone"></div>
+            <div class="space zone"></div>
+            <div class="space zone"></div>
+            <div class="space zone"></div>
+            <div class="space zone"></div>
+            <div class="space" id = "s1"></div>
+            <div class="space" id = "s2"></div>
+            <div class="space" id = "s3"></div>
+            <div class="space" id = "s4"></div>
+            <div class="space" id = "s5"></div>
+            <div class="space" id = "s6"></div>
+            <div class="space" id = "s7"></div>
+            <div class="space" id = "s8"></div>
+            <div class="space" id = "s9"></div>
+            <div class="space" id = "s10"></div>
+
+        
+    </div>
+    
+        
+    <!--system selector-->
     <div class="distributions">
         <form class="system">
             <div class="selectBox">
-                <div class="select active" id="select">
+                <div class="select" id="select">
                     <div class="contenidoSelect">
-                        <h3 class="tittle"> Tipo de sistema</h3>
+                        <h3 class="title"> Tipo de sistema</h3>
                     </div>
                     <i class="fas fa-angle-down"></i>
                 </div>
             </div>
+            <div class="options " id="options">
+                <a href="#" class="option">
+                    <div class="optionContent">
+                        <h3 class="title">W</h3>
+                    </div>
+                </a>
+                <a href="#" class="option">
+                    <div class="optionContent">
+                        <h3 class="title">Media Luna</h3>
+                    </div>
+                </a>
+                <a href="#" class="option">
+                    <div class="optionContent">
+                        <h3 class="title">Línea</h3>
+                    </div>
+                </a>
+            </div>
+            <input type="hidden" name="" id="inputSelect" value= "">
         </form>
-        <form class="setterPosition"></form>
+        
     </div>
     <script type="text/javascript" src="main.js"></script>
 </body>
