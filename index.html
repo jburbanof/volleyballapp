@@ -1,91 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aplicación para explicar sistemas de juego del voleybol">
-    <meta nmae="author" content="Julián Andrés Burbano Figueredo">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6a54ef4936.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aplicación para explicar sistemas de juego del voleybol"
+    />
+    <meta nmae="author" content="Julián Andrés Burbano Figueredo" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6a54ef4936.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Volleyballapp</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Players-->
     <div class="players">
-        <div class="bench"><div class="player" id='p1' draggable="true">A1</div></div>
-        <div class="bench"><div class="player" id='p2' draggable="true">A2</div></div>
-        <div class="bench"><div class="player" id='p3' draggable="true">B1</div></div>
-        <div class="bench"><div class="player" id='p4' draggable="true">B2</div></div>
-        <div class="bench"><div class="player" id='p5' draggable="true">C2</div></div>
-        <div class="bench"><div class="player" id='p6' draggable="true">
-            <div id="setter">C1</div>
-        </div></div>
-        
-        
-        
-        
-        
-        
+      <div class="bench">
+        <form class="playerAttributes">
+            <div class class="colorChange">
+              <label for="colors">Color:</label>
+              <select name="colors" class = "colors" id="colors 1"  onclick="colorChange()">
+                <option value="#9D9171">Café</option>
+                <option value="#EEB902">Amarillo</option>
+                <option value="#E53D00">Rojo</option>
+                <option value="#2D7DD2">Azul</option>
+                <option value="#2E294E">Morado</option>
+                <option value="#97CC04">Verde</option>
+              </select>
+            </div>
+            <div class="changeText">
+                <label for="newText 1">Texto:</label>
+                <input type="text" class="text" id="newText 1" name="newText" value="" />
+                <button type="button" onClick = "textChange()" ><i class="fas fa-angle-right"></i></button>
+            </div>
+        </form>
+        <div class="player" id="p 1" draggable="true"></div>
+      </div>
+      <div class="bench">
+        <form class="playerAttributes">
+            <div class class="colorChange">
+              <label for="colors 2">Color:</label>
+              <select name="colors" class = "colors" id="colors 2"  onclick="colorChange()">
+                <option value="#9D9171">Café</option>
+                <option value="#EEB902">Amarillo</option>
+                <option value="#E53D00">Rojo</option>
+                <option value="#2D7DD2">Azul</option>
+                <option value="#2E294E">Morado</option>
+                <option value="#97CC04">Verde</option>
+              </select>
+            </div>
+            <div class="changeText">
+                <label for="newText 2">Texto:</label>
+                <input type="text" class="text" id="newText 2" name="newText" value="" />
+                <button type="button" onClick = "textChange()" ><i class="fas fa-angle-right"></i></button>
+            </div>
+        </form>
+        <div class="player" id="p 2" draggable="true"></div>
+      </div>
+      <div class="bench">
+        <form class="playerAttributes">
+            <div class class="colorChange">
+              <label for="colors 3">Color:</label>
+              <select name="colors" class = "colors" id="colors 3"  onclick="colorChange()">
+                <option value="#9D9171">Café</option>
+                <option value="#EEB902">Amarillo</option>
+                <option value="#E53D00">Rojo</option>
+                <option value="#2D7DD2">Azul</option>
+                <option value="#2E294E">Morado</option>
+                <option value="#97CC04">Verde</option>
+              </select>
+            </div>
+            <div class="changeText">
+                <label for="newText 3">Texto:</label>
+                <input type="text" class="text" id="newText 3" name="newText" value="" />
+                <button type="button" onClick = "textChange()" ><i class="fas fa-angle-right"></i></button>
+            </div>
+        </form>
+        <div class="player" id="p 3" draggable="true"></div>
+      </div>
+      <div class="bench">
+        <form class="playerAttributes">
+            <div class class="colorChange">
+              <label for="colors 4">Color:</label>
+              <select name="colors" class = "colors" id="colors 4"  onclick="colorChange()">
+                <option value="#9D9171">Café</option>
+                <option value="#EEB902">Amarillo</option>
+                <option value="#E53D00">Rojo</option>
+                <option value="#2D7DD2">Azul</option>
+                <option value="#2E294E">Morado</option>
+                <option value="#97CC04">Verde</option>
+              </select>
+            </div>
+            <div class="changeText">
+                <label for="newText 4">Texto:</label>
+                <input type="text" class="text" id="newText 4" name="newText" value="" />
+                <button type="button" onClick = "textChange()" ><i class="fas fa-angle-right"></i></button>
+            </div>
+        </form>
+        <div class="player" id="p 4" draggable="true"></div>
+      </div>
+      <div class="bench">
+        <form class="playerAttributes">
+            <div class class="colorChange">
+              <label for="colors 5">Color:</label>
+              <select name="colors" class = "colors" id="colors 5"  onclick="colorChange()">
+                <option value="#9D9171">Café</option>
+                <option value="#EEB902">Amarillo</option>
+                <option value="#E53D00">Rojo</option>
+                <option value="#2D7DD2">Azul</option>
+                <option value="#2E294E">Morado</option>
+                <option value="#97CC04">Verde</option>
+              </select>
+            </div>
+            <div class="changeText">
+                <label for="newText 5">Texto:</label>
+                <input type="text" class="text" id="newText 5" name="newText" value="" />
+                <button type="button" onClick = "textChange()" ><i class="fas fa-angle-right"></i></button>
+            </div>
+        </form>
+        <div class="player" id="p 5" draggable="true"></div>
+      </div>
+      <div class="bench">
+        <form class="playerAttributes">
+            <div class class="colorChange">
+              <label for="colors  6">Color:</label>
+              <select name="colors" class = "colors" id="colors 6"  onclick="colorChange()">
+                <option value="#9D9171">Café</option>
+                <option value="#EEB902">Amarillo</option>
+                <option value="#E53D00">Rojo</option>
+                <option value="#2D7DD2">Azul</option>
+                <option value="#2E294E">Morado</option>
+                <option value="#97CC04">Verde</option>
+              </select>
+            </div>
+            <div class="changeText">
+                <label for="newText 6">Texto:</label>
+                <input type="text" class="text" id="newText 6" name="newText" value="" />
+                <button type="button" onClick = "textChange()" ><i class="fas fa-angle-right"></i></button>
+            </div>
+        </form>
+        <div class="player" id="p 6" draggable="true"></div>
+      </div>
+      <div class="bench">
+        <form class="playerAttributes">
+            <div class class="colorChange">
+              <label for="colors 7">Color:</label>
+              <select name="colors" class = "colors" id="colors 7"  onclick="colorChange()">
+                <option value="#9D9171">Café</option>
+                <option value="#EEB902">Amarillo</option>
+                <option value="#E53D00">Rojo</option>
+                <option value="#2D7DD2">Azul</option>
+                <option value="#2E294E">Morado</option>
+                <option value="#97CC04">Verde</option>
+              </select>
+            </div>
+            <div class="changeText">
+                <label for="newText 7">Texto:</label>
+                <input type="text" class="text" id="newText 7" name="newText" value="" />
+                <button type="button" onClick = "textChange()" ><i class="fas fa-angle-right"></i></button>
+            </div>
+        </form>
+        <div class="player" id="p 7" draggable="true"></div>
+      </div>
+      
     </div>
     <!--court and players position-->
     <div class="court" id="court">
-        
-            <div class="space zone"></div>
-            <div class="space zone"></div>
-            <div class="space zone"></div>
-            <div class="space zone"></div>
-            <div class="space zone"></div>
-            <div class="space" id = "s1"></div>
-            <div class="space" id = "s2"></div>
-            <div class="space" id = "s3"></div>
-            <div class="space" id = "s4"></div>
-            <div class="space" id = "s5"></div>
-            <div class="space" id = "s6"></div>
-            <div class="space" id = "s7"></div>
-            <div class="space" id = "s8"></div>
-            <div class="space" id = "s9"></div>
-            <div class="space" id = "s10"></div>
-
-        
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space zone"></div>
+      <div class="space zone"></div>
+      <div class="space zone"></div>
+      <div class="space zone"></div>
+      <div class="space zone"></div>
+      <div class="space" id="s1"></div>
+      <div class="space"></div>
+      <div class="space" id="s3"></div>
+      <div class="space"></div>
+      <div class="space" id="s5"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space" id="s7"></div>
+      <div class="space"></div>
+      <div class="space" id="s9"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="space" s></div>
     </div>
-    
-        
+
     <!--system selector-->
     <div class="distributions">
-        <form class="system">
-            <div class="selectBox">
-                <div class="select" id="select">
-                    <div class="contenidoSelect">
-                        <h3 class="title"> Tipo de sistema</h3>
-                    </div>
-                    <i class="fas fa-angle-down"></i>
-                </div>
+      <form class="system">
+        <div class="selectBox">
+          <div class="select" id="select">
+            <div class="contenidoSelect">
+              <h3 class="title">Tipo de sistema</h3>
             </div>
-            <div class="options " id="options">
-                <a href="#" class="option">
-                    <div class="optionContent">
-                        <h3 class="title">W</h3>
-                    </div>
-                </a>
-                <a href="#" class="option">
-                    <div class="optionContent">
-                        <h3 class="title">Media Luna</h3>
-                    </div>
-                </a>
-                <a href="#" class="option">
-                    <div class="optionContent">
-                        <h3 class="title">Línea</h3>
-                    </div>
-                </a>
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+        <div class="options" id="options">
+          <a href="#" class="option">
+            <div class="optionContent">
+              <h3 class="title">W</h3>
             </div>
-            <input type="hidden" name="" id="inputSelect" value= "">
-        </form>
-        
+          </a>
+          <a href="#" class="option">
+            <div class="optionContent">
+              <h3 class="title">Media Luna</h3>
+            </div>
+          </a>
+          <a href="#" class="option">
+            <div class="optionContent">
+              <h3 class="title">Línea</h3>
+            </div>
+          </a>
+        </div>
+        <input type="hidden" name="" id="inputSelect" value="" />
+      </form>
     </div>
     <script type="text/javascript" src="main.js"></script>
-</body>
+  </body>
 </html>
