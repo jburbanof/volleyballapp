@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -29,7 +29,7 @@
         <form class="playerAttributes">
             <div class class="colorChange">
               <label for="colors">Color:</label>
-              <select name="colors" class = "colors" id="colors 1"  onclick="colorChange()">
+              <select name="colors" class = "colors" id="colors 1"  onclick="colorChange()" onselect="colorChange()">
                 <option value="#9D9171">Café</option>
                 <option value="#FF36AB">Rosado</option>
                 <option value="#E53D00">Rojo</option>
@@ -41,7 +41,7 @@
             <div class="changeText">
                 <label for="newText 1">Texto:</label>
                 <input type="text" class="text" id="newText 1" name="newText" value="" />
-                <button type="button" onClick = "textChange()" ><i class="fas fa-angle-right"></i></button>
+                <button type="button" onClick = "textChange()"><i class="fas fa-angle-right"></i></button>
             </div>
         </form>
         <div class="player" id="p 1" draggable="true"></div>

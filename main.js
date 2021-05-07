@@ -120,9 +120,20 @@ function colorChange() {
   };
 }
 
+
+text.forEach((text) => {
+  text.addEventListener("keypress", (e) => {
+    if (e.keyCode === 13) { 
+      e.preventDefault();
+      textChange();
+    }
+  });
+});
+
 function textChange() {
+  
     for (var i = 0; i < text.length; i++) {
-        
+          
           var textId = text[i].id;
           console.log(textId);
           var playerId = "p " + textId.split(" ")[1];
