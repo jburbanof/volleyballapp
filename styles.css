@@ -42,9 +42,9 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px ;
-    height: 60px ;
-    border-radius: 30px;
+    width: 48px ;
+    height: 48px ;
+    border-radius: 24px;
     overflow: hidden;
     color: #fff;
     box-shadow: 0px 0px 15px black;
@@ -62,8 +62,8 @@ button{
 /*COURT*/
 .court{
     display:grid;
-    grid-template-columns: repeat(5,118px);
-    grid-template-rows: repeat(6,98px);
+    grid-template-columns: repeat(9,66px)!important;
+    grid-template-rows: repeat(9,66px)!important;
     float: left;
     border: 5px solid #fff;
     margin: 0 0 0 100px;
